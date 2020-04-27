@@ -2,6 +2,9 @@ language: python
 os:
     - "linux"
 env:
+    - NODE_VERSION="14"
+    - NODE_VERSION="13"
+    - NODE_VERSION="12"
     - NODE_VERSION="11"
     - NODE_VERSION="10"
     - NODE_VERSION="9"
@@ -11,12 +14,11 @@ env:
     - NODE_VERSION="5.11"
     - NODE_VERSION="4.4"
 python:
-    - "3.7-dev"
+    - "3.8"
+    - "3.7"
     - "3.6"
     - "3.5"
     - "3.4"
-    - "3.3"
-    - "3.2"
     - "2.7"
     - "2.6"
 before_install:
